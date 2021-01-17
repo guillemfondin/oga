@@ -1,12 +1,16 @@
+import React from "react";
 import Head from "next/head";
+import { HydraAdmin, ResourceGuesser } from "@api-platform/admin";
 
-const API_ENTRYPOINT =
-  process.env.REACT_APP_API_ENTRYPOINT || "https://localhost";
+const entrypoint = process.env.API_ENTRYPOINT || "https://localhost";
 
 const AdminLoader = () => {
   if (typeof window !== "undefined") {
-    const { HydraAdmin } = require("@api-platform/admin");
-    return <HydraAdmin entrypoint={API_ENTRYPOINT} />;
+    return (
+      <HydraAdmin entrypoint={entrypoint}>
+        <ResourceGuesser name={'users'} />
+      </HydraAdmin>
+    );
   }
 
   return <></>;
