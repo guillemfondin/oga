@@ -11,3 +11,7 @@ services:
     environment:
       MERCURE_PUBLISHER_JWT_KEY: ${MERCURE_PUBLISHER_JWT_KEY}
       MERCURE_SUBSCRIBER_JWT_KEY: ${MERCURE_SUBSCRIBER_JWT_KEY}
+
+  database:
+    environment:
+      - POSTGRES_DB=api

@@ -4,6 +4,8 @@ namespace App\Entity;
 
 use ApiPlatform\Core\Annotation\ApiResource;
 use App\Repository\MeetingUserRepository;
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -38,8 +40,19 @@ class MeetingUser
 
     /**
      * @ORM\Column(type="json")
+     * @var string[]
      */
     private array $roles = [];
+
+    /**
+     * @ORM\OneToMany(targetEntity=HasVoted::class, mappedBy="meetingUser", orphanRemoval=true)
+     */
+    private Collection $votedAgendas;
+
+    public function __construct()
+    {
+        $this->votedAgendas = new ArrayCollection();
+    }
 
     public function getId(): ?int
     {
@@ -70,6 +83,9 @@ class MeetingUser
         return $this;
     }
 
+    /**
+     * @return string[]
+     */
     public function getRoles(): array
     {
         $roles = $this->roles;
@@ -78,9 +94,38 @@ class MeetingUser
         return array_unique($roles);
     }
 
+    /**
+     * @param string[] $roles
+     * @return $this
+     */
     public function setRoles(array $roles): self
     {
         $this->roles = $roles;
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|HasVoted[]
+     */
+    public function getVotedAgendas(): Collection
+    {
+        return $this->votedAgendas;
+    }
+
+    public function addVotedAgenda(HasVoted $votedAgenda): self
+    {
+        if (!$this->votedAgendas->contains($votedAgenda)) {
+            $this->votedAgendas[] = $votedAgenda;
+            $votedAgenda->setMeetingUser($this);
+        }
+
+        return $this;
+    }
+
+    public function removeVotedAgenda(HasVoted $votedAgenda): self
+    {
+        $this->votedAgendas->removeElement($votedAgenda);
 
         return $this;
     }

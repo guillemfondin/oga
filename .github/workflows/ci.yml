@@ -35,5 +35,9 @@ jobs:
               run: curl  -vk -o /dev/null https://localhost
             - name: PHPUnit
               run: docker-compose exec -T php bin/phpunit
+            - name: PHPStan
+              run: docker-compose exec -T php vendor/bin/phpstan analyse
+            - name: PHPCs
+              run: docker-compose exec -T php vendor/bin/phpcs
             - name: Jest
               run: docker-compose exec -T pwa yarn test --passWithNoTests

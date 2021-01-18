@@ -1,0 +1,10 @@
+parameters:
+  level: max
+  paths:
+    - src
+    - tests
+  bootstrapFiles:
+    - bin/.phpunit/phpunit-9-0/vendor/autoload.php
+  checkGenericClassInNonGenericObjectType: false
+# inferPrivatePropertyTypeFromConstructor: true
+# checkMissingIterableValueType: false

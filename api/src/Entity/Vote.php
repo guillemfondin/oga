@@ -3,73 +3,53 @@
 namespace App\Entity;
 
 use ApiPlatform\Core\Annotation\ApiResource;
+use App\Entity\Interfaces\VoteInterface;
+use App\Entity\Traits\VoteTrait;
 use App\Repository\VoteRepository;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
  * @ORM\Entity(repositoryClass=VoteRepository::class)
- * @ApiResource
+ * @ApiResource(
+ *     itemOperations={},
+ *     collectionOperations={
+ *         "get",
+ *         "post"
+ *     }
+ * )
  */
-class Vote
+class Vote implements VoteInterface
 {
-    /**
-     * @ORM\Id
-     * @ORM\GeneratedValue
-     * @ORM\Column(type="integer")
-     */
-    private ?int $id = null;
+    use VoteTrait;
 
     /**
-     * @ORM\ManyToOne(targetEntity=Agenda::class, inversedBy="votes")
-     * @ORM\JoinColumn(nullable=false)
+     * @ORM\ManyToOne(targetEntity=MeetingUser::class)
      */
-    private Agenda $agenda;
-
-    /**
-     * @ORM\ManyToOne(targetEntity=User::class)
-     */
-    private ?User $user = null;
+    private ?MeetingUser $meetingUser = null;
 
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
      */
-    private ?string $value = null;
+    private string $value;
 
-    public function getId(): ?int
+    public function getMeetingUser(): ?MeetingUser
     {
-        return $this->id;
+        return $this->meetingUser;
     }
 
-    public function getAgenda(): Agenda
+    public function setMeetingUser(?MeetingUser $meetingUser): self
     {
-        return $this->agenda;
-    }
-
-    public function setAgenda(Agenda $agenda): self
-    {
-        $this->agenda = $agenda;
+        $this->meetingUser = $meetingUser;
 
         return $this;
     }
 
-    public function getUser(): ?User
-    {
-        return $this->user;
-    }
-
-    public function setUser(?User $user): self
-    {
-        $this->user = $user;
-
-        return $this;
-    }
-
-    public function getValue(): ?string
+    public function getValue(): string
     {
         return $this->value;
     }
 
-    public function setValue(?string $value): self
+    public function setValue(string $value): self
     {
         $this->value = $value;
 

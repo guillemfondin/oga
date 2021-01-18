@@ -7,13 +7,16 @@ use App\Repository\UserRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
-use JetBrains\PhpStorm\Pure;
 use Symfony\Component\Security\Core\User\UserInterface;
+use Symfony\Component\Serializer\Annotation\Groups;
 
 /**
  * @ORM\Entity(repositoryClass=UserRepository::class)
  * @ORM\Table(name="`user`")
- * @ApiResource
+ * @ApiResource(
+ *     normalizationContext={"groups"={"users:read"}},
+ *     denormalizationContext={"groups"={"users:write"}},
+ * )
  */
 class User implements UserInterface
 {
@@ -21,30 +24,35 @@ class User implements UserInterface
      * @ORM\Id
      * @ORM\GeneratedValue
      * @ORM\Column(type="integer")
+     * @Groups({"users:read"})
      */
     private ?int $id = null;
 
     /**
      * @ORM\Column(type="string", length=180, unique=true)
+     * @Groups({"users:read", "users:write"})
      */
     private string $email;
 
     /**
      * @ORM\Column(type="json")
+     * @Groups({"users:read", "users:write"})
+     * @var string[]
      */
     private array $roles = [];
 
     /**
      * @ORM\Column(type="string", nullable=true)
+     * @Groups({"users:write"})
      */
     private ?string $password = null;
 
     /**
      * @ORM\OneToMany(targetEntity=MeetingUser::class, mappedBy="meetingUsers")
+     * @Groups({"users:read"})
      */
     private Collection $meetingUsers;
 
-    #[Pure]
     public function __construct()
     {
         $this->meetingUsers = new ArrayCollection();
@@ -79,6 +87,7 @@ class User implements UserInterface
 
     /**
      * @see UserInterface
+     * @return string[]
      */
     public function getRoles(): array
     {
@@ -88,6 +97,10 @@ class User implements UserInterface
         return array_unique($roles);
     }
 
+    /**
+     * @param string[] $roles
+     * @return $this
+     */
     public function setRoles(array $roles): self
     {
         $this->roles = $roles;
@@ -110,9 +123,6 @@ class User implements UserInterface
         return $this;
     }
 
-    /**
-     * @return Meeting[]
-     */
     public function getMeetings(): Collection
     {
         return $this->meetingUsers->map(fn (MeetingUser $meetingUser) => $meetingUser->getMeeting());
@@ -129,5 +139,8 @@ class User implements UserInterface
     /**
      * @see UserInterface
      */
-    public function eraseCredentials(): void {}
+    public function eraseCredentials(): void
+    {
+        // Implement method
+    }
 }

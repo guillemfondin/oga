@@ -7,7 +7,6 @@ use App\Repository\AgendaRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
-use JetBrains\PhpStorm\Pure;
 
 /**
  * @ORM\Entity(repositoryClass=AgendaRepository::class)
@@ -38,10 +37,15 @@ class Agenda
      */
     private Collection $votes;
 
-    #[Pure]
+    /**
+     * @ORM\OneToMany(targetEntity=HasVoted::class, mappedBy="agenda", orphanRemoval=true)
+     */
+    private Collection $usersVoted;
+
     public function __construct()
     {
         $this->votes = new ArrayCollection();
+        $this->usersVoted = new ArrayCollection();
     }
 
     /* TODO: add file */
@@ -96,6 +100,31 @@ class Agenda
     public function removeVote(Vote $vote): self
     {
         $this->votes->removeElement($vote);
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|HasVoted[]
+     */
+    public function getUsersVoted(): Collection
+    {
+        return $this->usersVoted;
+    }
+
+    public function addUsersVoted(HasVoted $usersVoted): self
+    {
+        if (!$this->usersVoted->contains($usersVoted)) {
+            $this->usersVoted[] = $usersVoted;
+            $usersVoted->setAgenda($this);
+        }
+
+        return $this;
+    }
+
+    public function removeUsersVoted(HasVoted $usersVoted): self
+    {
+        $this->usersVoted->removeElement($usersVoted);
 
         return $this;
     }

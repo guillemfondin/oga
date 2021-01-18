@@ -57,7 +57,7 @@ services:
   database:
     image: postgres:13-alpine
     environment:
-      - POSTGRES_DB=api
+      - POSTGRES_MULTIPLE_DATABASES=api,api_test
       - POSTGRES_PASSWORD=!ChangeMe!
       - POSTGRES_USER=api-platform
     volumes:
