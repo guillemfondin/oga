@@ -1,8 +1,8 @@
-import React from "react";
+import React, {ReactElement} from "react";
 import Head from "next/head";
 import Link from "next/link";
 
-const Welcome = () => (
+const Welcome = (): ReactElement => (
   <>
     <Head>
       <title>Welcome to API Platform!</title>
@@ -1926,7 +1926,7 @@ const Sto = () => (
     width={25}
     height={25}
     viewBox="0 0 120 120"
-    style={{ enableBackground: "new 0 0 120 120" }}
+    // style={{ enableBackground: "new 0 0 120 120" }}
   >
     <style jsx>
       {`

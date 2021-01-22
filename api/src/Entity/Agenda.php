@@ -33,6 +33,11 @@ class Agenda
     private string $label;
 
     /**
+     * @ORM\Column(type="float")
+     */
+    private float $majority = 50;
+
+    /**
      * @ORM\OneToMany(targetEntity=Vote::class, mappedBy="agenda", orphanRemoval=true)
      */
     private Collection $votes;
@@ -42,13 +47,13 @@ class Agenda
      */
     private Collection $usersVoted;
 
+    /* TODO: add file */
+
     public function __construct()
     {
         $this->votes = new ArrayCollection();
         $this->usersVoted = new ArrayCollection();
     }
-
-    /* TODO: add file */
 
     public function getId(): ?int
     {
@@ -75,6 +80,18 @@ class Agenda
     public function setLabel(string $label): self
     {
         $this->label = $label;
+
+        return $this;
+    }
+
+    public function getMajority(): ?float
+    {
+        return $this->majority;
+    }
+
+    public function setMajority(float $majority): self
+    {
+        $this->majority = $majority;
 
         return $this;
     }

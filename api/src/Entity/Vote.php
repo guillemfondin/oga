@@ -23,6 +23,12 @@ class Vote implements VoteInterface
     use VoteTrait;
 
     /**
+     * @ORM\ManyToOne(targetEntity=Agenda::class, inversedBy="votes")
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private Agenda $agenda;
+
+    /**
      * @ORM\ManyToOne(targetEntity=MeetingUser::class)
      */
     private ?MeetingUser $meetingUser = null;
@@ -31,6 +37,18 @@ class Vote implements VoteInterface
      * @ORM\Column(type="string", length=255, nullable=true)
      */
     private string $value;
+
+    public function getAgenda(): Agenda
+    {
+        return $this->agenda;
+    }
+
+    public function setAgenda(Agenda $agenda): self
+    {
+        $this->agenda = $agenda;
+
+        return $this;
+    }
 
     public function getMeetingUser(): ?MeetingUser
     {

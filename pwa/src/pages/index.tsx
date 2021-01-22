@@ -1,34 +1,33 @@
-import React from "react";
+import React, {ReactElement} from 'react';
 import Head from "next/head";
-import Link from "next/link";
 
-const Welcome = () => (
-  <>
-    <Head>
-      <title>Welcome to OGA</title>
-    </Head>
+const index = (): ReactElement => (
+    <>
+        <Head>
+            <title>Welcome to OGA</title>
+        </Head>
 
-    <div className="welcome">
-      <header className="welcome__top">
-        <h1>Hello Online General Assembly</h1>
-      </header>
-      <section className="welcome__main">
-        <div className="main__content">
-          <h1>
-            Welcome to <strong>General Assembly</strong>!
-          </h1>
-          <div className="main__before-starting">
-            <p>
-              This page will present features and more for your new favorite meeting app !
-            </p>
-          </div>
-          <div className="main__other">
-            <h2>Available services:</h2>
-          </div>
-        </div>
-      </section>
+        <div className="welcome">
+            <header className="welcome__top">
+                <h1>Hello Online General Assembly</h1>
+            </header>
+            <section className="welcome__main">
+                <div className="main__content">
+                    <h1>
+                        Welcome to <strong>General Assembly</strong>!
+                    </h1>
+                    <div className="main__before-starting">
+                        <p>
+                            This page will present features and more for your new favorite meeting app !
+                        </p>
+                    </div>
+                    <div className="main__other">
+                        <h2>Available services:</h2>
+                    </div>
+                </div>
+            </section>
 
-      <style jsx global>{`
+            <style jsx global>{`
         @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto+Slab:300,700");
 
         body {
@@ -345,7 +344,8 @@ const Welcome = () => (
           }
         }
       `}</style>
-    </div>
-  </>
+        </div>
+    </>
 );
-export default Welcome;
+
+export default index;

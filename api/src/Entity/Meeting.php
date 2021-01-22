@@ -3,16 +3,35 @@
 namespace App\Entity;
 
 use ApiPlatform\Core\Annotation\ApiResource;
+use App\Controller\NextAgendaMeetingController;
 use App\Repository\MeetingRepository;
 use DateTimeInterface;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Serializer\Annotation\Groups;
 use function in_array;
 
 /**
  * @ORM\Entity(repositoryClass=MeetingRepository::class)
- * @ApiResource
+ * @ApiResource(
+ *     itemOperations={
+ *         "get",
+ *         "put",
+ *         "delete",
+ *         "patch"={
+ *             "method"="PATCH",
+ *             "path"="/meetings/{id}/next",
+ *             "controller"=NextAgendaMeetingController::class,
+ *             "normalization_context"={"groups"={"meeting_read:next"}},
+ *             "denormalization_context"={"groups"={"meeting_write:next"}}
+ *         },
+ *     },
+ *     collectionOperations={
+ *         "get",
+ *         "post"
+ *     }
+ * )
  */
 class Meeting
 {
@@ -34,12 +53,23 @@ class Meeting
     private string $subject;
 
     /**
+     * @ORM\Column(type="float", nullable=true)
+     */
+    private ?float $quorum = null;
+
+    /**
+     * @ORM\OneToOne(targetEntity=Agenda::class, cascade={"persist", "remove"})
+     * @Groups({"meeting_read:next"})
+     */
+    private ?Agenda $currentAgenda = null;
+
+    /**
      * @ORM\OneToMany(targetEntity=Agenda::class, mappedBy="meeting", orphanRemoval=true)
      */
     private Collection $agendas;
 
     /**
-     * @ORM\OneToMany(targetEntity=MeetingUser::class, mappedBy="meetingUsers")
+     * @ORM\OneToMany(targetEntity=MeetingUser::class, mappedBy="meeting")
      */
     private Collection $meetingUsers;
 
@@ -74,6 +104,30 @@ class Meeting
     public function setSubject(string $subject): self
     {
         $this->subject = $subject;
+
+        return $this;
+    }
+
+    public function getQuorum(): ?float
+    {
+        return $this->quorum;
+    }
+
+    public function setQuorum(?float $quorum): self
+    {
+        $this->quorum = $quorum;
+
+        return $this;
+    }
+
+    public function getCurrentAgenda(): ?Agenda
+    {
+        return $this->currentAgenda;
+    }
+
+    public function setCurrentAgenda(?Agenda $currentAgenda): self
+    {
+        $this->currentAgenda = $currentAgenda;
 
         return $this;
     }

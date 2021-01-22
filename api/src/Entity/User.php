@@ -48,7 +48,7 @@ class User implements UserInterface
     private ?string $password = null;
 
     /**
-     * @ORM\OneToMany(targetEntity=MeetingUser::class, mappedBy="meetingUsers")
+     * @ORM\OneToMany(targetEntity=MeetingUser::class, mappedBy="user")
      * @Groups({"users:read"})
      */
     private Collection $meetingUsers;

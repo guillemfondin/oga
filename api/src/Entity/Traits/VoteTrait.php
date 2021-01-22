@@ -18,12 +18,6 @@ trait VoteTrait
     private ?int $id = null;
 
     /**
-     * @ORM\ManyToOne(targetEntity=Agenda::class, inversedBy="votes")
-     * @ORM\JoinColumn(nullable=false)
-     */
-    private Agenda $agenda;
-
-    /**
      * @ORM\Column(type="datetime")
      */
     private DateTimeInterface $votedAt;
@@ -31,18 +25,6 @@ trait VoteTrait
     public function getId(): ?int
     {
         return $this->id;
-    }
-
-    public function getAgenda(): Agenda
-    {
-        return $this->agenda;
-    }
-
-    public function setAgenda(Agenda $agenda): self
-    {
-        $this->agenda = $agenda;
-
-        return $this;
     }
 
     public function getVotedAt(): DateTimeInterface

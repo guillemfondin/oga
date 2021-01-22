@@ -1,14 +1,16 @@
-import React from "react";
+import React, {ReactElement} from "react";
 import Head from "next/head";
 import { HydraAdmin, ResourceGuesser } from "@api-platform/admin";
 
 const entrypoint = process.env.API_ENTRYPOINT || "https://localhost";
 
-const AdminLoader = () => {
+const AdminLoader = (): ReactElement => {
   if (typeof window !== "undefined") {
     return (
       <HydraAdmin entrypoint={entrypoint}>
         <ResourceGuesser name={'users'} />
+        <ResourceGuesser name={'meetings'} />
+        <ResourceGuesser name={'agendas'} />
       </HydraAdmin>
     );
   }
@@ -16,7 +18,7 @@ const AdminLoader = () => {
   return <></>;
 };
 
-const Admin = () => (
+const Admin = (): ReactElement => (
   <>
     <Head>
       <title>API Platform Admin</title>

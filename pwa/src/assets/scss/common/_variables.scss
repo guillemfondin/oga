@@ -1,0 +1,35 @@
+// colors
+$background: #F7F5F5;
+$light-grey: #989898;
+$dark-grey: #454545;
+$light: #D1D1D1;
+$black: #000000;
+$white: #FFFFFF;
+$gold: #C69C6D;
+$green: #245563;
+$pink: #D39CA3;
+$red: #C91B45;
+
+// grid
+$width: 98%;
+$gutter: 2%;
+$breakpoint-small: 33.75em; // 540px
+$breakpoint-med: 45em; // 720px
+$breakpoint-large: 60em; // 960px
+$breakpoint-extra-large: 75em; // 1200px
+
+// fonts
+$font-weight-book: 200;
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-heavy: 700;
+$font-height: 1.5;
+
+// layout
+//$header-height-responsive-value: 100;
+//$header-height-value: 188;
+//$header-height-responsive: #{$header-height-responsive-value}px;
+//$header-height: #{$header-height-value}px;
+$header-height-responsive: 100px;
+$header-height: 188px;
+
