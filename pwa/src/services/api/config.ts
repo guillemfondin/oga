@@ -1,5 +1,6 @@
 export const API_URL = `${process.env.API_ENTRYPOINT ?? 'https://localhost'}/`;
 
+export const LOGIN_API = API_URL + 'login_check';
 export const USERS_API = API_URL + 'users';
 export const MEETING_API = API_URL + 'meetings';
 export const AGENDAS_API = API_URL + 'agendas';

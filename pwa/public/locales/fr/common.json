@@ -1,5 +1,46 @@
 {
   "general": {
     "home": "Accueil"
+  },
+  "page": {
+    "dashboard": {
+      "title": "Dashboard"
+    },
+    "login": {
+      "title": "Connexion",
+      "error": "Identifiants invalides"
+    },
+    "meeting": {
+      "title": "Réunions",
+      "add": "Nouvelle réunion",
+      "new": {
+        "title": "Nouvelle réunion"
+      }
+    }
+  },
+  "sidebar": {
+    "title": "Menu",
+    "menu": {
+      "dashboard": "Dashboard",
+      "meeting": "Mes réunions"
+    }
+  },
+  "input": {
+    "label": {
+      "email": "Votre adresse email",
+      "password": "Votre mot de passe",
+      "subject": "Sujet / nom de la réunion",
+      "quorum": "Quorum",
+      "date": "Date",
+      "save": "Enregistrer",
+      "valid": "Valider",
+      "connection": "Connexion"
+    },
+    "error": {
+      "global": "Une erreur est survenue",
+      "required": "Ce champs est obligatoire",
+      "email": "Veuillez renseigner une adresse email",
+      "password": "Veuillez renseigner un mot de passe"
+    }
   }
 }

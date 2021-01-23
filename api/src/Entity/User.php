@@ -3,6 +3,7 @@
 namespace App\Entity;
 
 use ApiPlatform\Core\Annotation\ApiResource;
+use App\Controller\GetMeetingsByUser;
 use App\Repository\UserRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
@@ -16,6 +17,18 @@ use Symfony\Component\Serializer\Annotation\Groups;
  * @ApiResource(
  *     normalizationContext={"groups"={"users:read"}},
  *     denormalizationContext={"groups"={"users:write"}},
+ *     itemOperations={
+ *         "get",
+ *         "put",
+ *         "delete",
+ *         "patch",
+ *         "meetings"={
+ *             "method"="GET",
+ *             "path"="/users/{id}/meetings",
+ *             "controller"=GetMeetingsByUser::class,
+ *             "normalization_context"={"groups"={"user_read:meetings"}},
+ *         },
+ *     },
  * )
  */
 class User implements UserInterface
@@ -123,9 +136,9 @@ class User implements UserInterface
         return $this;
     }
 
-    public function getMeetings(): Collection
+    public function getMeetingUsers(): Collection
     {
-        return $this->meetingUsers->map(fn (MeetingUser $meetingUser) => $meetingUser->getMeeting());
+        return $this->meetingUsers;
     }
 
     /**

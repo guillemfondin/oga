@@ -2,47 +2,45 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd5af38f-ea26-416a-b421-a1506bb6cefa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/api/migrations/Version20210122155208.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/migrations/Version20210122163346.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/Controller/NextAgendaMeetingController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwa/next.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwa/public/locales/fr/common.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwa/src/assets/scss/common/_fonts.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwa/src/assets/scss/common/_global.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwa/src/assets/scss/common/_grid.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwa/src/assets/scss/common/_variables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwa/src/assets/scss/components/_card.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwa/src/assets/scss/layout/_footer.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwa/src/assets/scss/layout/_header.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwa/src/assets/scss/layout/_sidebar.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwa/src/assets/scss/main.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwa/src/components/Footer.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwa/src/components/Header.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwa/src/custom.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwa/src/pages/_app.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwa/src/pages/login.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwa/src/services/api/AgendasAPI.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwa/src/services/api/HasVotedsAPI.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwa/src/services/api/MeetingUsersAPI.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwa/src/services/api/MeetingsAPI.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwa/src/services/api/UsersAPI.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwa/src/services/api/VotesAPI.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwa/src/services/api/config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwa/src/services/utils/QueryOptions.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwa/translations/i18n.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/Controller/GetMeetingsByUser.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/Event/JwtCreatedSubscriber.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/Event/MeetingCreatedSubscriber.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pwa/src/assets/scss/components/_form.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pwa/src/assets/scss/components/_jumbotron.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pwa/src/assets/scss/pages/_home.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pwa/src/assets/scss/pages/_login.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pwa/src/assets/scss/pages/_meetings.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pwa/src/components/Jumbotron.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pwa/src/components/Sibebar.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pwa/src/hooks/useRemoveEmptyFields.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pwa/src/hooks/useUser.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pwa/src/pages/app/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pwa/src/pages/app/meetings/[id].tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pwa/src/pages/app/meetings/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pwa/src/pages/app/meetings/new.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pwa/src/services/api/AuthAPI.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/.editorconfig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/.env" beforeDir="false" afterPath="$PROJECT_DIR$/api/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/.phpcs-cache" beforeDir="false" afterPath="$PROJECT_DIR$/api/.phpcs-cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/Entity/Agenda.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/Entity/Agenda.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/Entity/HasVoted.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/Entity/HasVoted.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/api/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/api/config/packages/security.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/api/config/services.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/src/Entity/Meeting.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/Entity/Meeting.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/Entity/Traits/VoteTrait.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/Entity/Traits/VoteTrait.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/Entity/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/Entity/Vote.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/Entity/Vote.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pwa/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/pwa/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pwa/pages/admin/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pwa/src/pages/admin/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pwa/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pwa/src/pages/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pwa/pages/infos.js" beforeDir="false" afterPath="$PROJECT_DIR$/pwa/src/pages/infos.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pwa/public/locales/fr/common.json" beforeDir="false" afterPath="$PROJECT_DIR$/pwa/public/locales/fr/common.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pwa/src/assets/scss/common/_fonts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/pwa/src/assets/scss/common/_fonts.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pwa/src/assets/scss/common/_global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/pwa/src/assets/scss/common/_global.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pwa/src/assets/scss/layout/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/pwa/src/assets/scss/layout/_header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pwa/src/assets/scss/layout/_sidebar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/pwa/src/assets/scss/layout/_sidebar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pwa/src/assets/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/pwa/src/assets/scss/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pwa/src/components/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pwa/src/components/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pwa/src/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pwa/src/pages/_app.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pwa/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pwa/src/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pwa/src/pages/infos.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pwa/src/pages/infos.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pwa/src/pages/login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pwa/src/pages/login.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pwa/src/services/api/MeetingsAPI.ts" beforeDir="false" afterPath="$PROJECT_DIR$/pwa/src/services/api/MeetingsAPI.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pwa/src/services/api/config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/pwa/src/services/api/config.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pwa/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pwa/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,14 +52,17 @@
     <pharConfigPath>$PROJECT_DIR$/api/composer.json</pharConfigPath>
     <execution />
   </component>
+  <component name="EditorConfigPreviewManager">
+    <editorConfig file="$PROJECT_DIR$/.editorconfig" previewFile="$PROJECT_DIR$/pwa/src/services/api/AuthAPI.ts" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="composer.json" />
         <option value="JavaScript File" />
+        <option value="TypeScript File" />
         <option value="SCSS File" />
         <option value="TSX Func Component" />
-        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -199,8 +200,9 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/pwa/src/services" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/api/src/Event" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -211,18 +213,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/pwa/src/services" />
-      <recent name="$PROJECT_DIR$/pwa/src/components" />
+      <recent name="$PROJECT_DIR$/api/src/Event" />
+      <recent name="$PROJECT_DIR$/api/src" />
+      <recent name="$PROJECT_DIR$/pwa/src/assets/scss/pages" />
+      <recent name="$PROJECT_DIR$/pwa/src/pages/app" />
       <recent name="$PROJECT_DIR$/pwa/src/assets/scss/layout" />
-      <recent name="$PROJECT_DIR$/pwa/src/assets/scss" />
-      <recent name="$PROJECT_DIR$/pwa/src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/pwa/src/pages/app/meetings" />
       <recent name="$PROJECT_DIR$/pwa/src/services/api" />
       <recent name="$PROJECT_DIR$/pwa/src/pages" />
       <recent name="$PROJECT_DIR$/pwa" />
       <recent name="$PROJECT_DIR$/pwa/src" />
-      <recent name="$PROJECT_DIR$/api/src/Entity" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -237,7 +239,7 @@
       <workItem from="1610903118568" duration="1000" />
       <workItem from="1610903129917" duration="1347000" />
       <workItem from="1610904574290" duration="19687000" />
-      <workItem from="1611329299979" duration="9746000" />
+      <workItem from="1611329299979" duration="29104000" />
     </task>
     <servers />
   </component>

@@ -39,21 +39,25 @@ class Meeting
      * @ORM\Id
      * @ORM\GeneratedValue
      * @ORM\Column(type="integer")
+     * @Groups({"user_read:meetings"})
      */
     private ?int $id = null;
 
     /**
      * @ORM\Column(type="date")
+     * @Groups({"user_read:meetings"})
      */
     private DateTimeInterface $date;
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Groups({"user_read:meetings"})
      */
     private string $subject;
 
     /**
      * @ORM\Column(type="float", nullable=true)
+     * @Groups({"user_read:meetings"})
      */
     private ?float $quorum = null;
 
@@ -199,7 +203,7 @@ class Meeting
     private function getMeetingUsersByRole(string $role): Collection
     {
         return $this->meetingUsers->filter(
-            fn (MeetingUser $meetingUser) => in_array(MeetingUser::ROLE_ADMIN, $meetingUser->getRoles())
+            fn (MeetingUser $meetingUser) => in_array($role, $meetingUser->getRoles())
         );
     }
 }
