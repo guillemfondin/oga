@@ -77,6 +77,18 @@ const Welcome = (): ReactElement => (
                 </h3>
               </div>
             </div>
+            <div className="other__bloc">
+              <div className="other__circle">
+                <Mercure />
+              </div>
+              <div className="other__content">
+                <h3>
+                  <a href="/.well-known/mercure/ui/">
+                    Mercure Debugger
+                  </a>
+                </h3>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -1813,6 +1825,367 @@ const WebbyWelcome = () => (
     <path
       className="webbyWelcome0"
       d="M273.5 167.6c0.1-0.4-6.7 24.4-14 26 -9.4 2-10.1 0.2-13.3-5.4 -3.2-5.6-2.7-11.3 3.5-15.2C255.9 169.1 263.4 166.5 273.5 167.6z"
+    />
+  </svg>
+);
+
+const Mercure = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    x={0}
+    y={0}
+    viewBox="0 0 100 100"
+    xmlSpace="preserve"
+  >
+    <style>
+      {
+        ".prefix__st1{fill:#fff}.prefix__st2,.prefix__st4{fill:#1e1f1d}.prefix__st4{opacity:.2}.prefix__st5{opacity:.1;fill:#020203}"
+      }
+    </style>
+    <circle
+      transform="rotate(-80.781 49.748 50.086)"
+      cx={49.7}
+      cy={50.1}
+      fill="#bbe1e3"
+      r={45.6}
+    />
+    <circle className="prefix__st1" cx={30.7} cy={34.2} r={6} />
+    <circle
+      transform="rotate(-82.027 48.473 22.241)"
+      className="prefix__st1"
+      cx={48.5}
+      cy={22.2}
+      r={10.7}
+    />
+    <circle
+      transform="rotate(-72.067 68.674 36.11)"
+      className="prefix__st1"
+      cx={68.7}
+      cy={36.1}
+      r={8.9}
+    />
+    <g>
+      <path
+        className="prefix__st2"
+        d="M36.8 75.8h-1L31.2 52l9.6 5.3-.5.9-8.1-4.5z"
+      />
+      <path
+        id="prefix__XMLID_370_"
+        className="prefix__st2"
+        d="M27.1 72.5l-1-.1 2-17.9L41 58.6l-.2 1-11.9-3.9z"
+      />
+      <path
+        id="prefix__XMLID_368_"
+        className="prefix__st2"
+        d="M41.6 73.1l-3.2-9.8 4.7-1 .2.9-3.6.9 2.9 8.7z"
+      />
+      <path
+        id="prefix__XMLID_366_"
+        className="prefix__st2"
+        d="M41.7 73s-.9-1.7-2.4-.6-.6 2.5-.6 2.5.5.5 2.1.5c1.6.1 2 0 2.3-.3.3-.3-.7-3-.7-3l-.7.9z"
+      />
+      <path
+        id="prefix__XMLID_364_"
+        className="prefix__st2"
+        d="M26.1 72.2s-1.5-2.3-3.6-.9c-2 1.4-.9 3.5-.9 3.5s.7.5 2.9.5c2.9 0 2.9-.9 3.1-1.5.4-1-.7-2.9-.7-2.9l-.8 1.3z"
+      />
+      <path
+        id="prefix__XMLID_361_"
+        className="prefix__st2"
+        d="M36.1 75.7s-2-2.9-4.1-1.5c-2 1.4-.9 3.5-.9 3.5s.7.5 2.9.5c2.9 0 3.1-.6 3.3-1.2.4-1-.9-3.2-.9-3.2l-.3 1.9z"
+      />
+    </g>
+    <g id="prefix__XMLID_345_">
+      <path
+        id="prefix__XMLID_360_"
+        className="prefix__st2"
+        d="M61.3 75.6h1l5.1-23.7-9.8 5.1.5.9 8.2-4.4z"
+      />
+      <path
+        id="prefix__XMLID_358_"
+        className="prefix__st2"
+        d="M71.2 72.4l.9-.1-1.7-17.9-12.9 3.9.1 1 12-3.8z"
+      />
+      <path
+        id="prefix__XMLID_354_"
+        className="prefix__st2"
+        d="M56.6 72.8l3.3-9.8-4.6-1.1-.2 1 3.5.9-2.9 8.7z"
+      />
+      <path
+        id="prefix__XMLID_352_"
+        className="prefix__st2"
+        d="M56.5 72.7s1-1.6 2.4-.6c1.5 1.1.6 2.5.6 2.5s-.5.4-2.1.5-2 0-2.3-.4c-.3-.4.7-3 .7-3l.7 1z"
+      />
+      <path
+        id="prefix__XMLID_350_"
+        className="prefix__st2"
+        d="M72.1 72.1s1.6-2.3 3.6-.8.8 3.5.8 3.5-.7.5-2.9.5c-2.9 0-2.9-.9-3.1-1.5-.3-1 .8-2.9.8-2.9l.8 1.2z"
+      />
+      <path
+        id="prefix__XMLID_348_"
+        className="prefix__st2"
+        d="M62.1 75.5s2.1-2.9 4.1-1.4c2 1.5.8 3.5.8 3.5s-.7.4-2.9.4c-2.9 0-3.1-.6-3.3-1.2-.3-1 1-3.2 1-3.2l.3 1.9z"
+      />
+    </g>
+    <g id="prefix__XMLID_340_">
+      <path
+        id="prefix__XMLID_344_"
+        d="M59.1 52.4c1.7 5.4-1.7 9.6-7.1 11.3-5.4 1.7-10.3.1-12.1-5.3-1.7-5.4 1.8-8.6 7.1-10.3 5.5-1.6 10.4-1.1 12.1 4.3z"
+        fill="#3baab4"
+      />
+      <path
+        id="prefix__XMLID_341_"
+        className="prefix__st2"
+        d="M52.3 64.7c-3 .9-5.8.9-8.1 0-2.5-1-4.3-3.1-5.2-5.9-1.7-5.4 1-9.3 7.8-11.5 6.9-2.2 11.6-.5 13.3 4.8.9 2.9.6 5.6-1 7.9-1.4 2.1-3.8 3.8-6.8 4.7zm-5.2-16.5c-6.3 2-8.7 5.4-7.1 10.2 1.6 5.1 6.3 7.1 12.1 5.3 5.9-1.9 8.7-6.3 7.1-11.4-2-5.9-7.6-5.5-12.1-4.1z"
+      />
+    </g>
+    <g id="prefix__XMLID_335_">
+      <ellipse
+        id="prefix__XMLID_339_"
+        transform="matrix(.00813 -1 1 .00813 -4.278 93.662)"
+        className="prefix__st1"
+        cx={45.1}
+        cy={49}
+        rx={6.9}
+        ry={6.7}
+      />
+      <path
+        id="prefix__XMLID_336_"
+        className="prefix__st2"
+        d="M44.9 56.2c-3.9 0-7-3.3-7-7.3s3.2-7.2 7.1-7.2c3.9 0 7 3.3 7 7.3-.1 4-3.2 7.3-7.1 7.2zm.1-13.8c-3.5 0-6.3 2.9-6.4 6.5 0 3.6 2.8 6.6 6.3 6.6s6.3-2.9 6.4-6.5c0-3.6-2.8-6.5-6.3-6.6z"
+      />
+    </g>
+    <g id="prefix__XMLID_330_">
+      <ellipse
+        id="prefix__XMLID_334_"
+        transform="matrix(.00813 -1 1 .00813 4.395 104.82)"
+        className="prefix__st1"
+        cx={55}
+        cy={50.2}
+        rx={5.4}
+        ry={5.5}
+      />
+      <path
+        id="prefix__XMLID_331_"
+        className="prefix__st2"
+        d="M54.9 55.9c-3.2 0-5.8-2.6-5.8-5.8 0-3.2 2.7-5.7 5.9-5.7s5.8 2.6 5.8 5.8c-.1 3.2-2.7 5.8-5.9 5.7zm0-10.8c-2.8 0-5.2 2.2-5.2 5s2.3 5.1 5.1 5.1 5.2-2.2 5.2-5c.1-2.7-2.2-5-5.1-5.1z"
+      />
+    </g>
+    <circle
+      id="prefix__XMLID_328_"
+      className="prefix__st2"
+      cx={45.5}
+      cy={49.4}
+      r={3.1}
+    />
+    <circle
+      id="prefix__XMLID_327_"
+      className="prefix__st1"
+      cx={47.2}
+      cy={48.9}
+      r={0.8}
+    />
+    <ellipse
+      id="prefix__XMLID_325_"
+      transform="matrix(.00813 -1 1 .00813 4.507 105.579)"
+      className="prefix__st2"
+      cx={55.5}
+      cy={50.5}
+      rx={2.4}
+      ry={2.5}
+    />
+    <circle
+      id="prefix__XMLID_324_"
+      className="prefix__st1"
+      cx={55}
+      cy={50.1}
+      r={0.7}
+    />
+    <g id="prefix__XMLID_272_">
+      <ellipse
+        id="prefix__XMLID_323_"
+        transform="rotate(-1.132 65.185 77.293)"
+        className="prefix__st4"
+        cx={65.2}
+        cy={77.3}
+        rx={4.3}
+        ry={1.4}
+      />
+      <ellipse
+        id="prefix__XMLID_322_"
+        transform="matrix(.00813 -1 1 .00813 -.088 148.78)"
+        className="prefix__st4"
+        cx={75}
+        cy={74.4}
+        rx={1.4}
+        ry={4.4}
+      />
+      <ellipse
+        id="prefix__XMLID_320_"
+        transform="matrix(.00813 -1 1 .00813 -16.842 131.481)"
+        className="prefix__st4"
+        cx={57.9}
+        cy={74.2}
+        rx={1.4}
+        ry={3}
+      />
+    </g>
+    <g id="prefix__XMLID_375_">
+      <ellipse
+        id="prefix__XMLID_381_"
+        transform="rotate(-87.937 32.606 77.55) scale(1.00005)"
+        className="prefix__st4"
+        cx={32.6}
+        cy={77.5}
+        rx={1.4}
+        ry={4.3}
+      />
+      <ellipse
+        id="prefix__XMLID_380_"
+        transform="matrix(.00813 -1 1 .00813 -51.829 96.813)"
+        className="prefix__st4"
+        cx={22.9}
+        cy={74.5}
+        rx={1.4}
+        ry={4.4}
+      />
+      <ellipse
+        id="prefix__XMLID_379_"
+        transform="matrix(.00813 -1 1 .00813 -34.944 113.984)"
+        className="prefix__st4"
+        cx={40}
+        cy={74.6}
+        rx={1.4}
+        ry={3}
+      />
+    </g>
+    <path
+      id="prefix__XMLID_356_"
+      className="prefix__st2"
+      d="M78.3 52.5L61.9 63.6l-5.5-4.9.6-.7 5 4.3 15.4-10.6z"
+    />
+    <path
+      id="prefix__XMLID_347_"
+      className="prefix__st2"
+      d="M77.2 53.1s3.1-1.1 2.2-3.5c-.9-2.3-3.2-1.6-3.2-1.6s-.7.5-1.3 2.7c-.7 2.9.2 3.1.9 3.3"
+    />
+    <path
+      id="prefix__XMLID_376_"
+      className="prefix__st2"
+      d="M20.8 53.2l16.3 10.9 5-5.3-.7-.7-4.5 4.8-15.7-10.5z"
+    />
+    <path
+      id="prefix__XMLID_362_"
+      className="prefix__st2"
+      d="M20.8 53.8s-3.2-.9-2.4-3.3c.8-2.4 3-1.9 3-1.9s.8.5 1.5 2.6c.9 2.8 0 3.1-.6 3.3"
+    />
+    <path
+      className="prefix__st5"
+      d="M26.9 38.3c2 2 5.2 2 7.2 0s2-5.2 0-7.2c0 0-1.1 3.4-2.4 4.6s-4.8 2.6-4.8 2.6z"
+    />
+    <linearGradient
+      id="prefix__SVGID_1_"
+      gradientUnits="userSpaceOnUse"
+      x1={-104.708}
+      y1={-218.524}
+      x2={-95.753}
+      y2={-218.524}
+      gradientTransform="matrix(1.3707 .02173 -.02176 1.3727 163.251 336.41)"
+    >
+      <stop offset={0} stopColor="#76c8dd" />
+      <stop offset={1} stopColor="#2ab3d7" />
+    </linearGradient>
+    <path
+      d="M30.5 40.4c-3.4-.1-6.1-2.9-6-6.2s2.9-6.1 6.2-6c3.4.1 6.1 2.9 6 6.2 0 3.3-2.8 6.1-6.2 6zm.2-11.8c-3.1 0-5.7 2.4-5.7 5.5s2.4 5.7 5.5 5.7 5.7-2.4 5.7-5.5c.1-3-2.4-5.6-5.5-5.7z"
+      fill="url(#prefix__SVGID_1_)"
+    />
+    <linearGradient
+      id="prefix__SVGID_2_"
+      gradientUnits="userSpaceOnUse"
+      x1={-103.744}
+      y1={320.571}
+      x2={-96.717}
+      y2={320.571}
+      gradientTransform="matrix(1.3707 .02173 .02176 -1.3727 161.031 476.425)"
+    >
+      <stop offset={0} stopColor="#76c8dd" />
+      <stop offset={1} stopColor="#2ab3d7" />
+    </linearGradient>
+    <path
+      d="M30.7 29.4c-2.7 0-4.9 2.1-4.9 4.7 0 .8.2 1.6.5 2.3.1-.1.3-.2.4-.3 2.7-1.5 5-2.8 6.6-5.2 0 0-.2 2.7-1.7 4-.4.3-.7.5-.9.7.8-.4 1.5-.9 2-1.5 0 0-.1 1.8-1.4 2.6-.5.3-.9.5-1.4.6.8-.2 1.3-.4 1.7-.6-.4 1.1-1.1 1.7-2.3 1.9-.4 0-.8-.1-1.1-.1.7.4 1.5.6 2.3.6 2.7 0 4.9-2.1 4.9-4.7.1-2.8-2-5-4.7-5z"
+      fill="url(#prefix__SVGID_2_)"
+    />
+    <path
+      className="prefix__st5"
+      d="M39.6 26.7c2 4.6 7.4 6.7 11.9 4.7s6.7-7.4 4.7-11.9c0 0-4.1 4.8-7 6.2-2.9 1.2-9.6 1-9.6 1z"
+    />
+    <linearGradient
+      id="prefix__SVGID_3_"
+      gradientUnits="userSpaceOnUse"
+      x1={124.354}
+      y1={-308.435}
+      x2={140.301}
+      y2={-308.435}
+      gradientTransform="matrix(1.2945 .5263 -.506 1.2446 -278.654 336.448)"
+    >
+      <stop offset={0} stopColor="#76c8dd" />
+      <stop offset={1} stopColor="#2ab3d7" />
+    </linearGradient>
+    <path
+      d="M44.7 32.1c-5.7-2.3-8.5-8.6-6.3-14.1s8.7-8 14.4-5.7 8.5 8.6 6.3 14.1c-2.3 5.5-8.7 8-14.4 5.7zm7.7-19c-5.2-2.1-11.1.2-13.1 5.2s.6 10.8 5.8 12.9S56.2 31 58.3 26c1.9-4.9-.7-10.8-5.9-12.9z"
+      fill="url(#prefix__SVGID_3_)"
+    />
+    <linearGradient
+      id="prefix__SVGID_4_"
+      gradientUnits="userSpaceOnUse"
+      x1={126.497}
+      y1={411.231}
+      x2={139.011}
+      y2={411.231}
+      gradientTransform="matrix(1.27 .5163 .517 -1.2718 -332.746 476.702)"
+    >
+      <stop offset={0} stopColor="#76c8dd" />
+      <stop offset={1} stopColor="#2ab3d7" />
+    </linearGradient>
+    <path
+      d="M51.7 14.3c-4.4-1.8-9.4.3-11.2 4.7-.6 1.4-.7 2.8-.6 4.2.3-.1.6-.1.9-.2 5.4-.8 10.1-1.4 14.3-4.4 0 0-2 4.4-5.5 5.5-.8.2-1.4.4-2 .5 1.6-.2 3-.5 4.4-1.2 0 0-1.3 3-4.1 3.4-.9.2-1.7.2-2.5.2 1.4.2 2.4.2 3.2 0-1.3 1.6-2.9 2.1-5 1.6-.7-.2-1.3-.6-1.8-1 .9 1.1 2 2 3.4 2.5 4.4 1.8 9.4-.3 11.2-4.7s-.3-9.3-4.7-11.1z"
+      fill="url(#prefix__SVGID_4_)"
+    />
+    <path
+      className="prefix__st5"
+      d="M60.5 35.5c-.5 4.1 2.4 7.9 6.5 8.4s7.9-2.4 8.4-6.5c0 0-5 1.7-7.6 1.4-2.6-.3-7.3-3.3-7.3-3.3z"
+    />
+    <linearGradient
+      id="prefix__SVGID_5_"
+      gradientUnits="userSpaceOnUse"
+      x1={343.974}
+      y1={-400.692}
+      x2={357.227}
+      y2={-400.692}
+      gradientTransform="matrix(.822 1.0971 -1.0987 .8232 -659.793 -18.605)"
+    >
+      <stop offset={0} stopColor="#76c8dd" />
+      <stop offset={1} stopColor="#2ab3d7" />
+    </linearGradient>
+    <path
+      d="M61.4 41.6c-3-4-2.2-9.7 1.8-12.7s9.7-2.2 12.7 1.8 2.2 9.7-1.8 12.7-9.7 2.2-12.7-1.8zm13.9-10.4c-2.7-3.7-8-4.4-11.6-1.7-3.7 2.8-4.4 8-1.7 11.6 2.7 3.7 8 4.4 11.7 1.7s4.4-7.9 1.6-11.6z"
+      fill="url(#prefix__SVGID_5_)"
+    />
+    <linearGradient
+      id="prefix__SVGID_6_"
+      gradientUnits="userSpaceOnUse"
+      x1={345.4}
+      y1={502.761}
+      x2={355.8}
+      y2={502.761}
+      gradientTransform="matrix(.822 1.0971 1.0987 -.8232 -771.86 65.363)"
+    >
+      <stop offset={0} stopColor="#76c8dd" />
+      <stop offset={1} stopColor="#2ab3d7" />
+    </linearGradient>
+    <path
+      d="M74.4 31.8c-2.4-3.2-6.8-3.8-10-1.4-1 .7-1.7 1.7-2.2 2.7.2.1.5.1.7.2 4.2 1.7 7.8 3.3 12.1 3 0 0-3.3 2.3-6.2 1.6-.6-.2-1.2-.3-1.6-.5 1.2.6 2.4 1 3.6 1 0 0-2.2 1.6-4.4.7-.8-.3-1.4-.7-1.9-1.1.9.8 1.6 1.2 2.3 1.4-1.6.6-3 .3-4.2-1-.4-.5-.6-1-.9-1.5.2 1.2.6 2.3 1.4 3.3 2.4 3.2 6.8 3.8 10 1.4 3-2.1 3.7-6.6 1.3-9.8z"
+      fill="url(#prefix__SVGID_6_)"
     />
   </svg>
 );

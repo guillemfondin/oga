@@ -2,46 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd5af38f-ea26-416a-b421-a1506bb6cefa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/Controller/GetMeetingsByUser.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/Event/JwtCreatedSubscriber.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/Event/MeetingCreatedSubscriber.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwa/src/assets/scss/components/_form.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwa/src/assets/scss/components/_jumbotron.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwa/src/assets/scss/pages/_home.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwa/src/assets/scss/pages/_login.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwa/src/assets/scss/pages/_meetings.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwa/src/components/Jumbotron.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwa/src/components/Sibebar.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwa/src/hooks/useRemoveEmptyFields.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwa/src/hooks/useUser.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwa/src/pages/app/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwa/src/pages/app/meetings/[id].tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwa/src/pages/app/meetings/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwa/src/pages/app/meetings/new.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwa/src/services/api/AuthAPI.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/.editorconfig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/api/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/api/config/packages/security.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/api/config/services.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/Entity/Meeting.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/Entity/Meeting.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/Entity/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pwa/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/pwa/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pwa/public/locales/fr/common.json" beforeDir="false" afterPath="$PROJECT_DIR$/pwa/public/locales/fr/common.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pwa/src/assets/scss/common/_fonts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/pwa/src/assets/scss/common/_fonts.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pwa/src/assets/scss/common/_global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/pwa/src/assets/scss/common/_global.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pwa/src/assets/scss/layout/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/pwa/src/assets/scss/layout/_header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pwa/src/assets/scss/layout/_sidebar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/pwa/src/assets/scss/layout/_sidebar.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pwa/src/assets/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/pwa/src/assets/scss/main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pwa/src/components/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pwa/src/components/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pwa/src/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pwa/src/pages/_app.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pwa/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pwa/src/pages/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pwa/src/pages/infos.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pwa/src/pages/infos.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pwa/src/pages/login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pwa/src/pages/login.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pwa/src/services/api/MeetingsAPI.ts" beforeDir="false" afterPath="$PROJECT_DIR$/pwa/src/services/api/MeetingsAPI.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pwa/src/services/api/config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/pwa/src/services/api/config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pwa/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pwa/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -202,7 +165,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/api/src/Event" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -239,7 +202,8 @@
       <workItem from="1610903118568" duration="1000" />
       <workItem from="1610903129917" duration="1347000" />
       <workItem from="1610904574290" duration="19687000" />
-      <workItem from="1611329299979" duration="29104000" />
+      <workItem from="1611329299979" duration="30043000" />
+      <workItem from="1612774101365" duration="575000" />
     </task>
     <servers />
   </component>
