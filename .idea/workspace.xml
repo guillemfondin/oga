@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="bd5af38f-ea26-416a-b421-a1506bb6cefa" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/api/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/api/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pwa/src/pages/infos.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pwa/src/pages/infos.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,7 +203,8 @@
       <workItem from="1610903129917" duration="1347000" />
       <workItem from="1610904574290" duration="19687000" />
       <workItem from="1611329299979" duration="30043000" />
-      <workItem from="1612774101365" duration="575000" />
+      <workItem from="1612774101365" duration="3542000" />
+      <workItem from="1616776354209" duration="1393000" />
     </task>
     <servers />
   </component>
